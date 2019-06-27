@@ -38,5 +38,16 @@ it('Test Heading of page',()=>{
   expect(compiled.querySelector('h2').textContent).toContain('App containing Test Cases');
 })
 
+it('Testing button event',()=>{
+  const fixture=TestBed.createComponent(AppComponent);
+const qe= fixture.debugElement.nativeElement.querySelector('button');
+
+qe.click();
+fixture.detectChanges();
+const app=fixture.debugElement.componentInstance;
+
+  expect(app.onChange()).toHaveBeenCalled();
+
+})
 
 });

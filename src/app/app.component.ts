@@ -12,10 +12,11 @@ export class AppComponent {
   test() : string {
     return "test";
   }
-/*   onChange(){
+  onChange(){
+    console.log('clicked');
     return 'button clicked';
   }
- */
+
 }
 
 

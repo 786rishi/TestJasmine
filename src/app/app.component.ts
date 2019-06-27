@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'testJasmine';
+
+
+  test() : string {
+    return "test";
+  }
 }
+
+

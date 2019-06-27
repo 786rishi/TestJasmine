@@ -1,14 +1,13 @@
 
+<h2>App containing Test Cases</h2>
+
 <br/>
 <form >
   <span class="fake-input" *ngIf="true">
 <input type="text" placeholder="Price" value="100" disabled style=" text-align: center "/>
 <img src="https://media2.giphy.com/media/l3HXhGvYiNRKM/giphy.gif" width=25 />
   </span>
+<button (submit)='onChange()'> Click Me</button>
+
   </form>
 
-  <style>
-  .fake-input { position: relative;  width: 10% ; left:20% }
-.fake-input img { position: absolute; left: 1% ; height : 100%; top : 3% }
-  
-  </style>
